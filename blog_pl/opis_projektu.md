@@ -1,8 +1,5 @@
-/*
-title: Opis projektu
-create_date: 2017-02-23
-publish_date: 2017-02-23
-*/
+[//]: # (title: Opis projektu; create_date: 2017-02-23; publish_date: 2017-02-23;)
+
 Czarna skrzynka do wysyłania/odbierania wiadomości email (nie mylić z black mail).
 Ogólne założenia:
 
