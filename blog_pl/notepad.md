@@ -48,3 +48,5 @@ User {
 email, password, username (=email), projects
 }
 
+
+Dokumentacja API - opis założeń w dokumencie, przepisanie do adnotacji w java i na podstawie tego wygenerowanie swaggerUI.
