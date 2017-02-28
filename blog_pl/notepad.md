@@ -88,3 +88,37 @@ A. Rejestracja/Logowanie
 5. Logowanie użytkownika zarejestrowanego za pomocą formularza używając OAuth; sukces=kod 200 przy pobraniu danych użytkownika
 6. Logowanie użytkownika zarejestrowanego za pomocą OAuth używając OAuth; sukces=kod 200 przy pobraniu danych użytkownika
 7. Logowanie użytkownika zarejestrowanego za pomocą OAuth używając Loginu i hasła (login=email, hasło należy zresetować); sukces=kod 200 przy pobraniu danych użytkownika
+
+
+# Plan prac:
+13 tygodni do końca maja
+
+## tydzień 1
+- Określenie przypadków użycia
+- Dokumentacja do każdego przypadku użycia
+- Zdefiniowanie stosu technologicznego
+- Szacowanie zasobów sprzętowych
+
+## tydzień 2
+- Wybór zakresu dla wersji 1.0
+- Przygotowanie scenariuszy testowych dla każdego use case
+- Zaplanowanie prac
+
+## tydzień 3
+- Przygotowanie pustych interfejsów API
+- Przygotowanie infrastruktury serwerów
+
+## tydzień 4, 5
+- Implementacja testów BDD
+
+## tydzień 6
+- Implementacja bazowa aplikacji (instalacja, zarządzanie użytkownikami i uprawnieniami)
+
+## tydzień 7,8,9,10,11
+- Implementacja funkcjonalności
+- Plan szczeółowy do oszacowania po _tygodniu 2_
+
+## tydzień 12,13
+- Przygotowanie wersji 1.0 produkcyjnej
+- Podłączenie pierwszego klienta LIVE
+- Monitoring i naprawa błędów
