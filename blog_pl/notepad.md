@@ -51,5 +51,40 @@ User {
 email, password, username (=email), projects
 }
 
-
 Dokumentacja API - opis założeń w dokumencie, przepisanie do adnotacji w java i na podstawie tego wygenerowanie swaggerUI.
+
+USE CASE:
+A. Instalacja i konfiguracja globalna
+1. Instalacja przy pomocy wygenerowanego kodu autoryzacji
+2. Konfiguracja - włączenie/wyłączenie rejestracji
+3. Automatyczna instalacja na podstawie zmiennych systemowych (docker env)
+
+B. Obsługa kont użytkowników przez Administratora
+1. Rejestracja nowego użytkownika
+2. Zablokowanie konta
+3. Usunięcie konta
+4. Aktualizacja danych
+
+C. Rejestracja/Logowanie użytkownika
+1. Rejestracja za pomocą formularza
+2. Logowanie za pomocą loginu i hasła
+3. Flow OAuth2
+4. Aktualizacja danych
+
+D. Wiadomości wychodzące
+1. Wyślij wiadomość email
+2. Zdefiniuj szablon
+3. Wyślij wiadomość używając szablonu
+4. Skonfiguruj SMTP serwer
+5. Wyślij wiadomość używając serwera SMTP
+
+TEST CASE:
+
+A. Rejestracja/Logowanie
+1. Rejestracja użytkownika za pomocą formularza; przy rejestracji tworzony jest projekt; sukces=użytkownik w bazie, 200 i liczba projektów=1
+2. Rejestracja użytkownika za pomocą OAuth; przy rejestracji tworzony jest projekt; sukces=użytkownik w bazie, 200 i liczba projektów=1
+3. Resetowanie hasła (procedura z kodem w email); sukces=zmienione hasło w bazie
+4. Logowanie użytkownika zarejestrowanego za pomocą formularza używając loginu i hasła; sukces=kod 200 przy pobraniu danych użytkownika
+5. Logowanie użytkownika zarejestrowanego za pomocą formularza używając OAuth; sukces=kod 200 przy pobraniu danych użytkownika
+6. Logowanie użytkownika zarejestrowanego za pomocą OAuth używając OAuth; sukces=kod 200 przy pobraniu danych użytkownika
+7. Logowanie użytkownika zarejestrowanego za pomocą OAuth używając Loginu i hasła (login=email, hasło należy zresetować); sukces=kod 200 przy pobraniu danych użytkownika
