@@ -8,19 +8,25 @@ Projekt API i dokumentacja:
 Założenia API:
 - rozdzielenie API projektu, użytkownika i administratora
 - wieloprojektowe; projekt=użytkownik; w przyszłości zarządzanie uprawnieniami?
+- API model mapowany na internal model
 
 Przykłady API:
 - /AAPI/v1.0/install - create admin user using security code from application startup
 - /AAPI/v1.0/pause - pause all or particular project
 - /AAPI/v1.0/project - create/update project
 - /AAPI/v1.0/project/abc-abc-abc-abc/ - particular project ADMIN management
-- /API/v1.0/abc-abc-abc-abc/template - template management
-- /API/v1.0/abc-abc-abc-abc/configuration - configuration management
-- /API/v1.0/abc-abc-abc-abc/template/ff-ff-ff-ff - template management
-- /API/v1.0/abc-abc-abc-abc/message - send message (1..)
-- /API/v1.0/abc-abc-abc-abc/message/cba-cba-cba-cba - message management
-- /API/v1.0/abc-abc-abc-abc/messageset - message set management
-- /UAPI/v1.0//messageset - message set management
+- /PAPI/v1.0/abc-abc-abc-abc/template - template management
+- /PAPI/v1.0/abc-abc-abc-abc/configuration - configuration management
+- /PAPI/v1.0/abc-abc-abc-abc/server - configuration: display info about default server, custom SMTP/IMAP server
+- /PAPI/v1.0/abc-abc-abc-abc/template/ff-ff-ff-ff - template management
+- /PAPI/v1.0/abc-abc-abc-abc/message - send message (1..)
+- /PAPI/v1.0/abc-abc-abc-abc/message/cba-cba-cba-cba - message management
+- /PAPI/v1.0/abc-abc-abc-abc/messageset - message set management
+- /PAPI/v1.0/abc-abc-abc-abc/messageset - message set management
+- /PAPI/v1.0/ POST - create project
+- /UAPI/v1.0/user/baba-baba-baba-baba - account info
+- /UAPI/v1.0/register?
+- /UAPI/v1.0/login?
 
 
 Internal Model:
@@ -41,3 +47,4 @@ uid, status, messageid, data {
 User {
 email, password, username (=email), projects
 }
+
