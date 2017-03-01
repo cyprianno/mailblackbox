@@ -91,7 +91,7 @@ A. Rejestracja/Logowanie
 
 
 # Plan prac:
-13 tygodni do końca maja
+Niepełne 14 tygodni do końca maja
 
 ## tydzień 1
 - Określenie przypadków użycia
@@ -118,7 +118,7 @@ A. Rejestracja/Logowanie
 - Implementacja funkcjonalności
 - Plan szczeółowy do oszacowania po _tygodniu 2_
 
-## tydzień 12,13
+## tydzień 12,13,14
 - Przygotowanie wersji 1.0 produkcyjnej
 - Podłączenie pierwszego klienta LIVE
 - Monitoring i naprawa błędów
