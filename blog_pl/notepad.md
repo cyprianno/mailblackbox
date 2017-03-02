@@ -91,7 +91,7 @@ A. Rejestracja/Logowanie
 
 
 # Plan prac:
-Niepełne 14 tygodni do końca maja
+13 tygodni do końca maja
 
 ## tydzień 1
 - Określenie przypadków użycia
@@ -118,7 +118,39 @@ Niepełne 14 tygodni do końca maja
 - Implementacja funkcjonalności
 - Plan szczeółowy do oszacowania po _tygodniu 2_
 
-## tydzień 12,13,14
+## tydzień 12,13
 - Przygotowanie wersji 1.0 produkcyjnej
 - Podłączenie pierwszego klienta LIVE
 - Monitoring i naprawa błędów
+
+## Kolejne kroki
+- Strona internetowa projektu
+- Możliwość rejestracji
+- Implementacja porzuconych funkcjonalności
+
+# Stos technologiczny
+Aplikacja:
+- spring boot
+- spring cloud
+- komunikacja przez javax.mail (lub spring integration/camel)
+- główna aplikacja zarządzająca plus satelity do zadań wysyłania/odbierania wiadomości
+
+Środowisko
+- docker
+- mysql
+- activemq
+- nginx
+
+Budowanie
+- maven
+- jenkins
+- obrazy docker trzymane w docker distribution jako finalny produkt
+
+Dokumentacja
+- plant uml
+- markdown
+- swagger (code first)
+
+Testy
+- BDD (prawdopodobnie cucumber)
+- Mailcatcher do automatycznych testów integracyjnych
