@@ -1,6 +1,6 @@
-[//]: # (title: Wstępny plan prac; create_date: 2017-03-01; publish_date: --;)
+[//]: # (title: Wstępny plan prac; create_date: 2017-03-01; publish_date: 2017-03-05;)
 
-Niepełne 14 tygodni do końca maja 2017, zaczyna się wyścig z czasem. Tydzień pierwszy dopiero się zaczął, a już w plecy z wykonaniem normy. 
+Niepełne 14 tygodni do końca maja 2017, zaczyna się wyścig z czasem. Tydzień pierwszy dopiero za nami, a już w plecy z wykonaniem normy. 
 Spokojnie, najważniejszy jest plan.
 
 ## tydzień 1
