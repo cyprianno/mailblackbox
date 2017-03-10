@@ -1,0 +1,10 @@
+@startuml
+note "Registration should be enabled\nto perform this task" as RegEnabled
+
+User --> (Register)
+RegEnabled . (Register)
+User --> (Log in)
+User --> (OAuth login)
+User --> (Update account)
+User --> (Remove account)
+@enduml

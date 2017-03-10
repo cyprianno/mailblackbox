@@ -1,0 +1,19 @@
+@startuml
+:Main Admin: as Admin
+
+Admin --> (Install application \nfor the first time\n using generated code\n from startup logs)
+Admin --> (Configure)
+(Configure) <-- (Enable/Disable registration)
+
+Admin --> (Register new user)
+Admin -> (Create or update project)
+
+note "New project requires\nregistered user" as CreateNote
+(Register new user) . CreateNote
+CreateNote . (Create or update project)
+
+Admin --> (Pause system)
+(Pause system) <-- (Pause particular project)
+
+Admin --> (Monitor system usage)
+@enduml

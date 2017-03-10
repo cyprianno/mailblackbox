@@ -1,0 +1,17 @@
+@startuml
+note "Only one project allowed per user;\nCan be extended in future releases" as OnlyOne
+User -> (Create/manage project)
+(Create/manage project) . OnlyOne
+
+User --> (Send raw email/emails set)
+User --> (Manage templates)
+User --> (Send email/emails set using template)
+User ---> (View email message status)
+User ---> (View emails set status)
+User ---> (Receive callback on email status change)
+User ---> (Configure servers: Default/SMTP)
+User --> (Manage scripts)
+User --> (Manage filters)
+User --> (Receive email as object filtered by script)
+
+@enduml
