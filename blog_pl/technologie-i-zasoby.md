@@ -1,11 +1,15 @@
-Plan wszystkiego, co będzie potrzebne podczas rozwoju aplikacji. Zaczynamy od dokumentacji:
+Plan wszystkiego, co będzie potrzebne podczas rozwoju aplikacji. 
+
+Zaczynamy od dokumentacji:
 - UML w PlantUML - dzięki temu można łatwo wersjonować diagramy oraz wyszukiwac w nich
 - Dokumenty w markdown - uniwersjalny sposób formatowania tekstu
 - Dokumentacja API w Swagger - wygenerowana z kodu i dostarczana razem z aplikacją
 
 Wykonanie aplikacji:
 - Główna techonologia Java
-- Główny framework spring-boot
+- Główne frameworki spring-boot, spring-cloud, spring-integration
+- Repozytorium na JOOQ
+- W miarę możliwości wykorzystanie CQRS (własna implementacja, może na spring-integration)
 
 Wdrożenie
 - Automatyczne budowanie / Automatyczny deployment (Jenkins)
@@ -16,6 +20,7 @@ Zależności zewnętrzne aplikacji:
 - baza danych MySQL
 - AcitveMQ
 - serwer smtp
+- nginx jako reverse proxy 
 
 Potrzeby serwerowe:
 - serwer budowania jenkins - jeden VPS
