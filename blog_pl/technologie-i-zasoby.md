@@ -1,4 +1,4 @@
-Plan wszystkiego, co będzie potrzebne podczas rozwoju aplikacji. 
+Zestaw zapotrzebowania do rozwoju aplikacji. 
 
 Zaczynamy od dokumentacji:
 - UML w PlantUML - dzięki temu można łatwo wersjonować diagramy oraz wyszukiwac w nich
