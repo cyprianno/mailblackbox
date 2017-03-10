@@ -13,8 +13,7 @@ Wykonanie aplikacji:
 
 Wdrożenie
 - Automatyczne budowanie / Automatyczny deployment (Jenkins)
-- Aplikacja dostarczana jako wykonywalne obrazy dockera, alternatywnie wykonywalne jary
-- Wersja bundle - obrazy dockerowe dla aplikacji i wszystkich zależności
+- Aplikacja dostarczana jako wykonywalne obrazy dockera, alternatywnie wykonywalne jary, do tego wersja bundle - obrazy dockerowe dla aplikacji i prekonfigurowanych wszystkich zależności
 
 Zależności zewnętrzne aplikacji:
 - baza danych MySQL
@@ -27,3 +26,7 @@ Potrzeby serwerowe:
 - serwer testów integracyjnych - jeden VPS
 - serwer produkcyjny - jeden VPS
 - repozytorium obrazów dockera - Cloud Storage
+
+Testy:
+- mailcatcher (https://mailcatcher.me/)
+- Cucumber
