@@ -1,7 +1,7 @@
 @startuml
 :Main Admin: as Admin
 
-Admin --> (Install application \nfor the first time\n using generated code\n from startup logs)
+Admin --> (Install application \nfor the first time\n using generated access token\n from startup logs)
 Admin --> (Configure)
 (Configure) <-- (Enable/Disable registration)
 
