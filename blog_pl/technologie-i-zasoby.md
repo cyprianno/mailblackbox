@@ -1,3 +1,5 @@
+[//]: # (title: Technologie i zasoby; create_date: 2017-03-10; publish_date: 2017-03-11;)
+
 Zestaw zapotrzebowania do rozwoju aplikacji. 
 
 Zaczynamy od dokumentacji:
