@@ -1,7 +1,7 @@
 [//]: # (title: Przypadki użycia; create_date: 2017-03-11; publish_date: 2017-03-11;)
 
 [uc-main-admin]: https://raw.githubusercontent.com/cyprianno/mailblackbox/master/blog_pl/main-admin.png
-[uc-project-and-email]: https://raw.githubusercontent.com/cyprianno/mailblackbox/master/blog_pl/project-adm-email.png
+[uc-project-and-email]: https://raw.githubusercontent.com/cyprianno/mailblackbox/master/blog_pl/project-and-email.png
 [uc-user-account]: https://raw.githubusercontent.com/cyprianno/mailblackbox/master/blog_pl/user-account.png
 
 Główne pliki dokumentacji - przypadki użycia. Źródła znajdują się na GH: https://github.com/cyprianno/mailblackbox/tree/master/docs/use-case
