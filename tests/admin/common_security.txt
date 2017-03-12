@@ -1,0 +1,14 @@
+Scenario: should allow change configuration
+  Given admin_credentials "admin@mailblackbox.com:password"
+  Given installed application with admin_credentials
+  Given configuration registration_enabled true
+  When call API admin POST as admin_credentials configure with registration_enabled true
+  Then configuration registration_enabled is true
+
+Scenario: should not allow change configuration if bad password
+  Given admin_credentials "admin@mailblackbox.com:password"
+  Given bad_credentials "admin@mailblackbox.com:badpassword"
+  Given installed application with admin_credentials
+  Given configuration registration_enabled true
+  When call API admin POST as bad_credentials configure with registration_enabled true
+  Then configuration registration_enabled is true

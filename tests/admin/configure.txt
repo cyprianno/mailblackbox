@@ -1,0 +1,27 @@
+Scenario: should configure enable registration
+  Given admin_credentials "admin@mailblackbox.com:password"
+  Given installed application with admin_credentials
+  Given configuration registration_enabled false
+  When call API admin POST configure with registration_enabled true
+  Then configuration registration_enabled is true
+
+Scenario: should configure disable registration
+  Given admin_credentials "admin@mailblackbox.com:password"
+  Given installed application with admin_credentials
+  Given configuration registration_enabled true
+  When call API admin POST configure with registration_enabled false
+  Then configuration registration_enabled is false
+
+Scenario: should configure disable registration when disabled
+  Given admin_credentials "admin@mailblackbox.com:password"
+  Given installed application with admin_credentials
+  Given configuration registration_enabled false
+  When call API admin POST configure with registration_enabled false
+  Then configuration registration_enabled is false
+
+Scenario: should configure enable registration when enabled
+  Given admin_credentials "admin@mailblackbox.com:password"
+  Given installed application with admin_credentials
+  Given configuration registration_enabled true
+  When call API admin POST configure with registration_enabled true
+  Then configuration registration_enabled is true

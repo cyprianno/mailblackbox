@@ -1,0 +1,26 @@
+Scenario: should install for the first time
+  Given admin_credentials "admin@mailblackbox.com:password"
+  Given dropped all tables
+  Given application started with install token "abcd"
+  When call API admin POST install with token "abcd" and admin admin_credentials
+  Then result return code is 200
+  Then result status is "OK"
+  Then api admin monitoring result contains "installed: true"
+
+Scenario: should not install if installed
+  Given admin_credentials "admin@mailblackbox.com:password"
+  Given installed application
+  Given application started with install token "abcd"
+  When call API admin POST install with token "abcd" and admin admin_credentials
+  Then result return code is 400  
+  Then result status is "INVALID_REQUEST"
+  Then api admin monitoring result contains "installed: true"
+
+Scenario: should not install if bad token
+  Given admin_credentials "admin@mailblackbox.com:password"
+  Given dropped all tables
+  Given application started with install token "abcd"
+  When call API admin POST install with token "dcba" and admin admin_credentials
+  Then result return code is 401  
+  Then result status is "NOT_AUTHORIZED"
+  Then api admin monitoring result contains "installed: false"
