@@ -1,4 +1,4 @@
-Scenario: should allow change configuration
+Scenario: should allow change configuration if correct password
   Given admin_credentials "admin@mailblackbox.com:password"
   Given installed application with admin_credentials
   Given configuration registration_enabled true

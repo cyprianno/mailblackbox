@@ -1,0 +1,16 @@
+Scenario: should pause all emails
+  Given admin_credentials "admin@mailblackbox.com:password"
+  Given installed application with admin_credentials
+  Given configuration paused false
+  When call API admin POST as admin_credentials configure with paused true
+  Then configuration paused is true
+
+Scenario: should pause particular project
+  Given admin_credentials "admin@mailblackbox.com:password"
+  Given installed application with admin_credentials
+  Given project "PROJ1"
+  Given project "PROJ1" configuration paused false
+  When call API admin POST as admin_credentials configure with paused true
+  Then configuration project "PROJ1" paused is true
+
+# TODO: merge with configuration test case

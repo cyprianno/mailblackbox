@@ -1,0 +1,1 @@
+Scenario: should register new user

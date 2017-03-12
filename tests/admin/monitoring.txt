@@ -1,0 +1,8 @@
+Scenario: should fetch monitoring
+  Given admin_credentials "admin@mailblackbox.com:password"
+  Given installed application with admin_credentials
+  Given configuration registration_enabled false
+  When call API admin POST monitoring as admin_credentials
+  Then response contains "paused: false"
+
+#TODO: different setup; find out what we can monitor
