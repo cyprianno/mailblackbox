@@ -1,5 +1,7 @@
 Kod:
 - http://www.baeldung.com/rest-api-spring-oauth2-angularjs - przykład z authorization server
+- http://grinder.sourceforge.net/ - load testing
+
 
 Projekt API i dokumentacja:
 - doxygen ?
