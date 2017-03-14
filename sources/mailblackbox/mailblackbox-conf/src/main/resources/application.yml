@@ -1,0 +1,11 @@
+---
+spring:
+  cloud:
+    config:
+      server:
+        native:
+          searchLocations: classpath:mbb-conf/
+  profiles:
+    active: native,cloud
+server:
+  port: 8001

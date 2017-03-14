@@ -1,0 +1,11 @@
+---
+spring:
+  application:
+    name: mbb
+  cloud:
+    config:
+      uri: http://localhost:8001/
+      name: mbb
+      fail-fast: true
+      profile: development
+
