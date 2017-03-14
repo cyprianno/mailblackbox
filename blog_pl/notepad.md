@@ -1,6 +1,7 @@
 Kod:
 - http://www.baeldung.com/rest-api-spring-oauth2-angularjs - przykład z authorization server
 - http://grinder.sourceforge.net/ - load testing
+- https://spring.io/blog/2014/11/25/spring-integration-java-dsl-line-by-line-tutorial 
 
 
 Projekt API i dokumentacja:
