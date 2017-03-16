@@ -2,7 +2,7 @@ Kod:
 - http://www.baeldung.com/rest-api-spring-oauth2-angularjs - przykład z authorization server
 - http://grinder.sourceforge.net/ - load testing
 - https://spring.io/blog/2014/11/25/spring-integration-java-dsl-line-by-line-tutorial 
-
+- https://dzone.com/articles/java-inside-docker-what-you-must-know-to-not-fail - running java inside docker
 
 Projekt API i dokumentacja:
 - doxygen ?
