@@ -23,7 +23,7 @@ cloud "Queue" {
 }
 
 node "Workers" {
-    Queue <--> [Mailbox worker]
+    Queue <--> [Mailbox worker] : 1..*
     [Mailbox worker] --> [postfix]
     [Mailbox worker] --> [Configuration server]
 
