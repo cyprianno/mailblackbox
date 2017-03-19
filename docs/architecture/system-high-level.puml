@@ -1,0 +1,35 @@
+@startuml
+
+package "System Configuration" {
+    [Configuration server]
+}
+database "MySQL" {
+}
+
+package "Entry Point" {
+    [NGINX]
+}
+
+package "Base server" {
+    [NGINX] --> [Mailbox app]
+    [Mailbox app]
+    [Mailbox app] --> MySQL
+    [Mailbox app] <--> Queue
+    [Mailbox app] --> [Configuration server]
+}
+
+cloud "Queue" {
+    [ActiveMQ]
+}
+
+node "Workers" {
+    Queue <--> [Mailbox worker]
+    [Mailbox worker] --> [postfix]
+    [Mailbox worker] --> [Configuration server]
+
+}
+Incomming_HTTP_HTTPS - [NGINX]
+Outgoing_HTTP_HTTPS <--- [Mailbox app]
+[Mailbox worker] <--- IMAP
+[postfix] -> SMTP
+@enduml
