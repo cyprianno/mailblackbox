@@ -1,4 +1,4 @@
-[//]: # (title: Zakres prac 1.0; create_date: 2017-03-11; publish_date: ;)
+[//]: # (title: Zakres prac 1.0; create_date: 2017-03-11; publish_date: 2017-03-19;)
 
 Do przypadków użycia dochodzą jeszcze sprawy bardziej techniczne. Najpierw potrzebny będzie core projektu i standardy przepływu danych (co przeważnie przedstawia
 się na diagramie warstw). Chciałbym użyć CQRS (Command Query Responsibility Separation), czyli trochę dodatkowej pracy potrzebne będzie
@@ -23,4 +23,6 @@ się na diagramie warstw). Chciałbym użyć CQRS (Command Query Responsibility 
  - dodawanie/edycja szablonów (z wersjonowaniem) 1 tydzień
  - wysyłanie wiadomości z szablonu: 1/2 tygodnia
  - Możliwość konfiguracji projektu i serwerów: 1/2 tygodnia
+ 
+To już chyba na tyle planowania, czas zabrać się za realizowanie zaplanowanych celów.
  
