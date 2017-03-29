@@ -26,6 +26,6 @@ public class EmailController {
 
     @RequestMapping(path = "mail", method = RequestMethod.GET)
     public MailMessage update(MailMessageQuery query) {
-        return new MailMessage();
+        return new MailMessage("",null);
     }
 }

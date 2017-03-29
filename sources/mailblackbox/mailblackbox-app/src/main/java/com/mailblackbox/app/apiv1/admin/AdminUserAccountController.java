@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  * Created by csniegot on 2017-03-29.
  */
 @RestController
-public class UserAccountController {
+public class AdminUserAccountController {
 
     @RequestMapping(path = "user")
     public UserAccount find(UserAccountQuery userAccountQuery) {

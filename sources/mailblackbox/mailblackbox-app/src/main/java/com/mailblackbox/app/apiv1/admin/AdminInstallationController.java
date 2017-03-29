@@ -15,8 +15,8 @@ import javax.annotation.PostConstruct;
  * Created by cypri on 14.03.2017.
  */
 @RestController
-public class InstallationController {
-    private static final Logger log = LoggerFactory.getLogger(InstallationController.class);
+public class AdminInstallationController {
+    private static final Logger log = LoggerFactory.getLogger(AdminInstallationController.class);
 
     @Value("${mbb.install.authtoken:}")
     private String installAuthToken;

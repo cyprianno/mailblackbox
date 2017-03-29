@@ -11,10 +11,10 @@ import java.util.Collections;
  * Created by csniegot on 2017-03-29.
  */
 @RestController
-public class ProjectController {
+public class AdminProjectController {
     @RequestMapping(path = "project")
     public Project find(ProjectQuery query) {
-        return new Project("", "", Collections.emptyList(),null);
+        return new Project("", "", Collections.<ShortUserAccount>emptyList(),null);
     }
 
     @RequestMapping(path = "project", method = RequestMethod.POST)

@@ -13,7 +13,7 @@ import java.util.HashMap;
  * Created by csniegot on 2017-03-29.
  */
 @RestController
-public class ConfigurationController {
+public class AdminConfigurationController {
 
     @RequestMapping("/configuration")
     public Configuration getConfiguration() {
