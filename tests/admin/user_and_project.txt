@@ -1,1 +1,7 @@
 Scenario: should register new user
+  Given admin_credentials "admin@mailblackbox.com:password"
+  Given installed application with admin_credentials
+  Given user_data {username: testuser, password: testpass, email: test@hmail.pl}
+  Given no user registered user_data.username
+  When call API admin POST as admin_credentials users with data user_data
+  Then user registered user_data
