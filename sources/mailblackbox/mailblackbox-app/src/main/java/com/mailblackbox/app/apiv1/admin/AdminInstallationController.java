@@ -15,6 +15,7 @@ import javax.annotation.PostConstruct;
  * Created by cypri on 14.03.2017.
  */
 @RestController
+@RequestMapping("/admin/installation")
 public class AdminInstallationController {
     private static final Logger log = LoggerFactory.getLogger(AdminInstallationController.class);
 
@@ -30,7 +31,7 @@ public class AdminInstallationController {
         log.info("Installation token is: " + installAuthToken);
     }
 
-    @RequestMapping("/installation")
+    @RequestMapping(path = "")
     public Result installation() {
         return new Result(ResultStatus.ERROR);
     }

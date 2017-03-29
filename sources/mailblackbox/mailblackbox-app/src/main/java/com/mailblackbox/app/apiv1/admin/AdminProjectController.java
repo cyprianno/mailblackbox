@@ -11,23 +11,24 @@ import java.util.Collections;
  * Created by csniegot on 2017-03-29.
  */
 @RestController
+@RequestMapping(path = "/admin/project")
 public class AdminProjectController {
-    @RequestMapping(path = "project")
+    @RequestMapping(path = "")
     public Project find(ProjectQuery query) {
         return new Project("", "", Collections.<ShortUserAccount>emptyList(),null);
     }
 
-    @RequestMapping(path = "project", method = RequestMethod.POST)
+    @RequestMapping(path = "", method = RequestMethod.POST)
     public Result create(Project userAccount) {
         return new Result(ResultStatus.OK);
     }
 
-    @RequestMapping(path = "project", method = RequestMethod.PUT)
+    @RequestMapping(path = "", method = RequestMethod.PUT)
     public Result update(Project userAccount) {
         return new Result(ResultStatus.OK);
     }
 
-    @RequestMapping(path = "project", method = RequestMethod.DELETE)
+    @RequestMapping(path = "", method = RequestMethod.DELETE)
     public Result delete(Project userAccount) {
         return new Result(ResultStatus.OK);
     }

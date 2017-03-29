@@ -13,14 +13,15 @@ import java.util.HashMap;
  * Created by csniegot on 2017-03-29.
  */
 @RestController
+@RequestMapping("/admin/configuration")
 public class AdminConfigurationController {
 
-    @RequestMapping("/configuration")
+    @RequestMapping(path = "")
     public Configuration getConfiguration() {
         return new Configuration(new HashMap<String, String>());
     }
 
-    @RequestMapping(path = "/configuration", method = RequestMethod.PUT)
+    @RequestMapping(path = "", method = RequestMethod.PUT)
     public Result updateConfigurationOptions(Configuration configuration) {
         return new Result(ResultStatus.OK);
     }
