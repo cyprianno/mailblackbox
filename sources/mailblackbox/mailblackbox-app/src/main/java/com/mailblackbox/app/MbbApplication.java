@@ -19,15 +19,6 @@ public class MbbApplication {
     @Value("${sample.data}")
     String name = "World";
 
-    @RequestMapping("/")
-    public String home() {
-        return "Hello " + name;
-    }
-
-    @PostConstruct
-    public void test() {
-        System.out.println(home());
-    }
 
     public static void main(String[] args) {
         SpringApplication.run(MbbApplication.class, args);
