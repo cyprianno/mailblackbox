@@ -13,6 +13,7 @@ import org.springframework.messaging.MessageHeaders;
 import org.springframework.messaging.support.GenericMessage;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.web.WebAppConfiguration;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -24,9 +25,10 @@ import java.util.concurrent.Future;
  * Unit test for simple MbbApplication.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration
+@ContextConfiguration()
 @Import({MbbApplication.class, SIConfiguration.class})
 @PropertySource({"classpath:application.properties"})
+@WebAppConfiguration
 public class AppTest {
 
     @Autowired
