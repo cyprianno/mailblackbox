@@ -1,6 +1,5 @@
 package com.mailblackbox.app;
 
-import com.mailblackbox.app.commands.CommandResult;
 import com.mailblackbox.app.commands.admin.UpdateDatabaseCommand;
 import com.mailblackbox.app.processing.CommandGateway;
 import org.junit.Test;
